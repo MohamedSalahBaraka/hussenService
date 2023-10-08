@@ -1,0 +1,332 @@
+/* font */
+@font-face {
+    font-family: "Alexandria";
+    src: url(../font/Alexandria-VariableFont_wght.ttf);
+}
+@font-face {
+    font-family: "Marhey";
+    src: url(../font/Marhey-VariableFont_wght.ttf);
+}
+@font-face {
+    font-family: "ElMessiri";
+    src: url(../font/ElMessiri-VariableFont_wght.ttf);
+}
+
+/* end font */
+/* global */
+.h-95{
+    height: 95%;
+}
+.w-95{
+    width: 95%;
+}
+.headding{
+    font-family: "ElMessiri";
+}
+.marhey{
+font-family:"Marhey";
+}
+svg path{
+    fill: currentColor;
+}
+.bg-green{
+    background-color: #0d8281;
+}
+.bg-orange{
+    background-color: #fd4f2c;
+}
+.color-green{
+    color: #0d8281;
+}
+.color-orange{
+    color: #fd4f2c;
+}
+.z-index {
+    z-index: 1000;
+}
+.vh-40{
+height: 40vh;
+}
+.orange-hover:hover{
+    color: #fd4f2c !important;
+}
+.xs-svg{
+    height: 18px;
+    padding: 2px;
+}
+.color-danger{
+    color: red;
+}
+.wishlist-btn svg{
+    height: 30px;
+}
+/* btn */
+/* header */
+.svg {
+    width: 30px;
+    height: 30px;
+}
+
+#search-input::placeholder {
+    color: #141728;
+    opacity: 0.5;
+}
+
+#search-input {
+    text-align: center !important;
+}
+.nav-img{
+    height: 40px;
+}
+.nav-svgs{
+    height: 25px;
+}
+.notify{
+    position: relative;
+}
+.notify::before{
+    content: attr(count);
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    width: 20px;
+    font-size: .7rem;
+    font-weight: bold;
+    height: 20px;
+    border-radius: 50%;
+    background-color: rgb(228, 53, 53);
+    color: rgb(230, 217, 217);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.product{
+    position: relative;
+}
+.product::before{
+    content: attr(price);
+    position: absolute;
+    top: -25px;
+    right: 0px;
+    padding: 10px;
+    width: fit-content;
+    height: 50px;
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: 5px;
+    background-color: #141728;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* end header */
+/* main */
+
+
+
+/* end main */
+/* footer */
+ .bi {
+     vertical-align: -.125em;
+     fill: currentColor;
+ }
+ .slider-img{
+    height: 400px;
+    object-fit: contain;
+ }
+/* end footer */
+ul.ks-cboxtags {
+    list-style: none;
+    padding: 20px;
+}
+
+ul.ks-cboxtags li {
+    display: inline;
+}
+
+ul.ks-cboxtags li label {
+    display: inline-block;
+    background-color: rgba(255, 255, 255, .9);
+    border: 2px solid rgba(139, 139, 139, .3);
+    color: #adadad;
+    border-radius: 25px;
+    white-space: nowrap;
+    margin: 3px 0px;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -webkit-tap-highlight-color: transparent;
+    transition: all .2s;
+}
+
+ul.ks-cboxtags li label {
+    padding: 8px 12px;
+    cursor: pointer;
+}
+
+ul.ks-cboxtags li label::before {
+    display: inline-block;
+    font-style: normal;
+    font-variant: normal;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    font-size: 12px;
+    padding: 2px 6px 2px 2px;
+    content: "\f067";
+    transition: transform .3s ease-in-out;
+}
+
+ul.ks-cboxtags li input[type="checkbox"]:checked+label::before {
+    content: "\f00c";
+    transform: rotate(-360deg);
+    transition: transform .3s ease-in-out;
+}
+
+ul.ks-cboxtags li input[type="checkbox"]:checked+label {
+    border: 2px solid #1bdbf8;
+    background-color: #12bbd4;
+    color: #fff;
+    transition: all .2s;
+}
+
+ul.ks-cboxtags li input[type="checkbox"] {
+    display: absolute;
+}
+
+ul.ks-cboxtags li input[type="checkbox"] {
+    position: absolute;
+    opacity: 0;
+}
+
+ul.ks-cboxtags li input[type="checkbox"]:focus+label {
+    border: 2px solid #e9a1ff;
+}
+body {
+    background-color: #eee
+}
+
+.chat-btn {
+    position: absolute;
+    right: 14px;
+    bottom: 30px;
+    cursor: pointer
+}
+
+.chat-btn .close {
+    display: none
+}
+
+.chat-btn i {
+    transition: all 0.9s ease
+}
+
+#check:checked~.chat-btn i {
+    display: block;
+    pointer-events: auto;
+    transform: rotate(180deg)
+}
+
+#check:checked~.chat-btn .comment {
+    display: none
+}
+#check:checked~.chat-btn .close {
+    display: block
+}
+
+.chat-btn i {
+    font-size: 22px;
+    color: #fff !important
+}
+
+.chat-btn {
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50px;
+    background-color: rgb(56, 126, 231);
+    color: #fff;
+    font-size: 22px;
+    border: none
+}
+
+.wrapper {
+    position: absolute;
+    right: 20px;
+    bottom: 100px;
+    width: 300px;
+    background-color: #fff;
+    border-radius: 5px;
+    opacity: 0;
+    transition: all 0.4s
+}
+
+#check:checked~.wrapper {
+    opacity: 1
+}
+
+.header {
+    padding: 13px;
+    background-color: rgb(56, 126, 231);
+    border-radius: 5px 5px 0px 0px;
+    margin-bottom: 10px;
+    color: #fff
+}
+
+.chat-form {
+    padding: 15px
+}
+
+.chat-form input,
+textarea,
+button {
+    margin-bottom: 10px
+}
+
+.chat-form textarea {
+    resize: none
+}
+
+.form-control:focus,
+.btn:focus {
+    box-shadow: none
+}
+
+
+#check {
+    display: none !important
+}
+html,
+body,
+.intro {
+    height: 100%;
+}
+
+table td,
+table th {
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    min-width: 200px;
+    max-width: 200px;
+}
+.calender-table td,
+.calender-table th {
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    font-size: xx-small;
+    min-width: 50px;
+    max-width: 50px;
+}
+
+tbody td {
+    font-weight: 500;
+    color: #999999;
+}
